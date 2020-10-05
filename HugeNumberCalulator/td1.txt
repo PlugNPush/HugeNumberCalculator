@@ -1,0 +1,14 @@
+T​RAVAIL​ ​DEMANDÉ​ ​POUR​ ​LE​ TP1
+Une architecture complète et détaillée du programme HugeNumberCalculator. Elle doit contenir :
+    - La liste de tous les fichiers .h et .c
+    - Les relations envisagées entre les différents .h
+    - La signature des fonctions par .h
+    - Les nouveaux types de données définis
+Une répartition des tâches. Cette répartition doit contenir :
+    - La méthode de travail envisagée
+    - Les outils utilisés :
+        o Choix d’IDE
+        o Choix d’outils de travail collaboratif
+    - La liste des tâches à réaliser et son affectation à un membre du groupe.
+
+

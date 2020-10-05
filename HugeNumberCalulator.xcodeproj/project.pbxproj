@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		EDAF735D252B8A9A00FA052D /* HugeNumberCalulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HugeNumberCalulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAF7360252B8A9A00FA052D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EDAF7369252B8B7800FA052D /* td1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = td1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				EDAF7360252B8A9A00FA052D /* main.c */,
+				EDAF7369252B8B7800FA052D /* td1.txt */,
 			);
 			path = HugeNumberCalulator;
 			sourceTree = "<group>";
