@@ -1,2 +1,4 @@
 C:\Users\vince\Documents\GitHub\HugeNumberCalculator\Debug\HugeNumberCalculator.exe
 C:\Users\vince\Documents\GitHub\HugeNumberCalculator\Debug\HugeNumberCalculator.pdb
+C:\Users\Mon PC\Documents\GitHub\HugeNumberCalculator\Debug\HugeNumberCalculator.exe
+C:\Users\Mon PC\Documents\GitHub\HugeNumberCalculator\Debug\HugeNumberCalculator.pdb
