@@ -1,28 +1,33 @@
-//
-//  main.c
-//  HugeNumberCalulator
-//
-//  Created by PlugN on 5.10.20..
-//
-
-#include <stdio.h>
 #include <stdlib.h>
-#define FIZZ "Fizz"
-#define BUZZ "Buzz"
-int main(void) {
-	for (int i = 1; i <= 100; i++) {
-		if (i % 15 == 0) {
-			printf("%s%s\n", FIZZ, BUZZ);
-		}
-		else if (i % 3 == 0) {
-			printf("%s\n", FIZZ);
-		}
-		else if (i % 5 == 0) {
-			printf("%s\n", BUZZ);
-		}
-		else {
-			printf("%d\n", i);
-		}
-	}
-	return EXIT_SUCCESS;
+#include <stdio.h>
+#include "IHMHugeNumber/ScanHugeNumber.h"
+#include "IHMHugeNumber/ShowHugeNumber.h"
+
+int main (void) {
+    HugeFloat* op1 = createHugeFloatFromString ("1002315684321510", "-10");
+    HugeFloat* op2 = createHugeFloatFromString ("98745", "236");
+    HugeFloat* addition = addHugeFloat (op1, op2);
+    HugeFloat* substraction = substractHugeFloat (op1, op2);
+    HugeFloat* multiplication = multiplyHugeFloat (op1, op2);
+    HugeInt* division = divideHugeInt (op1->significand, op2->significand);
+
+    printHugeFloat (op1);
+    printHugeFloat (op2);
+    printf (" + = ");
+    printHugeFloat (addition);
+    printf (" - = ");
+    printHugeFloat (substraction);
+    printf (" x = ");
+    printHugeFloat (multiplication);
+    printf (" / = ");
+    printHugeInt (division);
+
+    deleteHugeFloat (op1);
+    deleteHugeFloat (op2);
+    deleteHugeFloat (addition);
+    deleteHugeFloat (substraction);
+    deleteHugeFloat (multiplication);
+    deleteHugeInt (division);
+
+    return EXIT_SUCCESS;
 }
