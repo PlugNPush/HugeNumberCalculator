@@ -124,7 +124,7 @@
 		EDAF7354252B8A9A00FA052D = {
 			isa = PBXGroup;
 			children = (
-				EDAF735F252B8A9A00FA052D /* HugeNumberCalulator */,
+				EDAF735F252B8A9A00FA052D /* HugeNumberCalculator */,
 				EDAF735E252B8A9A00FA052D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDAF735F252B8A9A00FA052D /* HugeNumberCalulator */ = {
+		EDAF735F252B8A9A00FA052D /* HugeNumberCalculator */ = {
 			isa = PBXGroup;
 			children = (
 				ED6D619C257183D90095F37D /* DataTypes */,
@@ -146,7 +146,7 @@
 				EDAF7360252B8A9A00FA052D /* main.c */,
 				EDAF7369252B8B7800FA052D /* td1.txt */,
 			);
-			path = HugeNumberCalulator;
+			path = HugeNumberCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

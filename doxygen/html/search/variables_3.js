@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['next_135',['next',['../struct_node.html#a772e2a82248c0d0dfc5cdf19d5b45df9',1,'Node']]]
+  ['next_148',['next',['../struct_node.html#aa162dd1e0693188a22b1f13b9a2a0ef0',1,'Node']]]
 ];

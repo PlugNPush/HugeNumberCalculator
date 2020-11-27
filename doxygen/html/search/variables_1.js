@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['digit_133',['digit',['../struct_node.html#a78a2971a1056156209f2dad0e50d779d',1,'Node']]]
+  ['digit_146',['digit',['../struct_node.html#aa9ea71b0c962d75878554c0cda6d5b1c',1,'Node']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['doublylinkedlist_72',['DoublyLinkedList',['../struct_doubly_linked_list.html',1,'']]]
+  ['doublylinkedlist_78',['DoublyLinkedList',['../struct_doubly_linked_list.html',1,'']]]
 ];

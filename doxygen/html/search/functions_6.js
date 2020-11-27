@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['removeendfromdoublylinkedlist_124',['removeEndFromDoublyLinkedList',['../_huge_number_calculator_2_data_types_2_doubly_linked_list_8h.html#afee2bb4698ee9a8cfc1eb786fe1a5ad5',1,'DoublyLinkedList.c']]],
-  ['removestartfromdoublylinkedlist_125',['removeStartFromDoublyLinkedList',['../_huge_number_calculator_2_data_types_2_doubly_linked_list_8h.html#a888f58d614d7dd872d15e19515ed82ef',1,'DoublyLinkedList.c']]]
+  ['printhugefloat_132',['printHugeFloat',['../_show_huge_number_8h.html#a5af9f6922dfccbbd9ef5aef23a67bc82',1,'ShowHugeNumber.c']]],
+  ['printhugeint_133',['printHugeInt',['../_show_huge_number_8h.html#a85259ba0ec0fda7550f0da9cdd87e6bf',1,'ShowHugeNumber.c']]],
+  ['printhugeunsignedint_134',['printHugeUnsignedInt',['../_show_huge_number_8h.html#a53ea47500e7b37a0a314ff540647f8dd',1,'ShowHugeNumber.c']]]
 ];
