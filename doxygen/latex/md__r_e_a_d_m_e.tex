@@ -1,0 +1,135 @@
+A calculator for handling huge numbers.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{This version contains all functions wtih implemented code}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item .H files only contain function signatures
+\item .C files only contain implemented code
+\end{DoxyItemize}
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Huge\+Number\+Calculator architecture \+:}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item \textbackslash{}\+Data\+Types
+\begin{DoxyItemize}
+\item Doubly\+Linked.\+h
+\begin{DoxyItemize}
+\item {\ttfamily typedef unsigned short Digit;}
+\item {\ttfamily typedef struct \mbox{\hyperlink{struct_node}{Node}};}
+\item {\ttfamily typedef struct \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}};}
+\item {\ttfamily int add\+Digit\+At\+End (Doubly\+Linked\+List$\ast$ doubly\+Linked\+List, Digit digit);}
+\item {\ttfamily int add\+Digit\+At\+Start (Doubly\+Linked\+List$\ast$ doubly\+Linked\+List, Digit digit);}
+\item {\ttfamily Doubly\+Linked\+List$\ast$ create\+Doubly\+Linked\+List (void);}
+\item {\ttfamily Doubly\+Linked\+List$\ast$ create\+Doubly\+Linked\+List\+From\+String (char$\ast$ digit\+String);}
+\item {\ttfamily void delete\+Doubly\+Linked\+List (Doubly\+Linked\+List$\ast$ doubly\+Linked\+List);}
+\item {\ttfamily char digit\+To\+Char (Digit digit);}
+\item {\ttfamily Digit get\+Digit\+By\+Place\+From\+Start (Doubly\+Linked\+List$\ast$ doubly\+Linked\+List, unsigned int place);}
+\item {\ttfamily int get\+Doubly\+Linked\+List\+Length (Doubly\+Linked\+List$\ast$ doubly\+Linked\+List);}
+\item {\ttfamily int is\+Node\+Empty (Node$\ast$ node);}
+\item {\ttfamily void remove\+End\+From\+Doubly\+Linked\+List (Doubly\+Linked\+List$\ast$ doubly\+Linked\+List);}
+\item {\ttfamily void remove\+Start\+From\+Doubly\+Linked\+List (Doubly\+Linked\+List$\ast$ doubly\+Linked\+List);}
+\end{DoxyItemize}
+\item Doubly\+Linked.\+c
+\begin{DoxyItemize}
+\item {\ttfamily Digit char\+To\+Digit (char digit\+Char);}
+\item {\ttfamily Node$\ast$ create\+Node (Digit digit);}
+\item {\ttfamily void delete\+Node (Node$\ast$ node);}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item \textbackslash{}\+Use\+Huge\+Number
+\begin{DoxyItemize}
+\item \textbackslash{}\+Operator
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_huge_float_operator_8h}{Huge\+Float\+Operator.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily Huge\+Float$\ast$ add\+Huge\+Float (Huge\+Float$\ast$ operand1, Huge\+Float$\ast$ operand2);}
+\item {\ttfamily Huge\+Float$\ast$ substract\+Huge\+Float (Huge\+Float$\ast$ operand1, Huge\+Float$\ast$ operand2);}
+\item {\ttfamily Huge\+Float$\ast$ multiply\+Huge\+Float (Huge\+Float$\ast$ operand1, Huge\+Float$\ast$ operand2);}
+\item {\ttfamily Huge\+Float$\ast$ simplify\+Huge\+Float (Huge\+Float$\ast$ huge\+Float);}
+\end{DoxyItemize}
+\item Huge\+Float\+Operator.\+c
+\item \mbox{\hyperlink{_huge_int_operator_8h}{Huge\+Int\+Operator.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily Huge\+Int$\ast$ add\+Huge\+Int (Huge\+Int$\ast$ operand1, Huge\+Int$\ast$ operand2);}
+\item {\ttfamily Huge\+Int$\ast$ substract\+Huge\+Int (Huge\+Int$\ast$ operand1, Huge\+Int$\ast$ operand2);}
+\item {\ttfamily Huge\+Int$\ast$ multiply\+Huge\+Int (Huge\+Int$\ast$ operand1, Huge\+Int$\ast$ operand2);}
+\item {\ttfamily Huge\+Int$\ast$ divide\+Huge\+Int (Huge\+Int$\ast$ operand1, Huge\+Int$\ast$ operand2);}
+\end{DoxyItemize}
+\item Huge\+Int\+Operator.\+c
+\item \mbox{\hyperlink{_huge_unsigned_int_operator_8h}{Huge\+Unsigned\+Int\+Operator.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily Huge\+Unsigned\+Int$\ast$ add\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily Huge\+Unsigned\+Int$\ast$ create\+Huge\+Unsigned\+Int\+From\+Power\+Of10 (Huge\+Unsigned\+Int$\ast$ exponent);}
+\item {\ttfamily void decrement\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int);}
+\item {\ttfamily Huge\+Unsigned\+Int$\ast$ divide\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily void increment\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int);}
+\item {\ttfamily unsigned int is\+Huge\+Unsigned\+Int\+Strictly\+Superior (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily unsigned int is\+Huge\+Unsigned\+Int\+Superior (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily unsigned int is\+Huge\+Unsigned\+Int\+Equal (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily unsigned int is\+Huge\+Unsigned\+Int\+Inferior (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily unsigned int is\+Huge\+Unsigned\+Int\+Strictly\+Inferior (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily Huge\+Int$\ast$ substract\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\item {\ttfamily uge\+Unsigned\+Int$\ast$ multiply\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\end{DoxyItemize}
+\item Huge\+Unsigned\+Int\+Operator.\+c
+\begin{DoxyItemize}
+\item {\ttfamily unsigned int compare\+Huge\+Unsigned\+Ints (Huge\+Unsigned\+Int$\ast$ operand1, Huge\+Unsigned\+Int$\ast$ operand2);}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item \textbackslash{}\+Type
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_huge_float_8h}{Huge\+Float.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily typedef struct \mbox{\hyperlink{struct_huge_float}{Huge\+Float}};}
+\item {\ttfamily Huge\+Float$\ast$ create\+Huge\+Float (void);}
+\item {\ttfamily Huge\+Float$\ast$ create\+Huge\+Float\+From\+String (char$\ast$ significand\+String, char$\ast$ exponent\+String);}
+\item {\ttfamily Huge\+Float$\ast$ create\+Huge\+Float\+From\+Huge\+Ints (Huge\+Int$\ast$ significand\+Huge\+Int, Huge\+Int$\ast$ exponent\+S\+Huge\+Int);}
+\item {\ttfamily Huge\+Float$\ast$ create\+Huge\+Float\+From\+Huge\+Float (Huge\+Float$\ast$ huge\+Float, unsigned int size);}
+\item {\ttfamily void delete\+Huge\+Float (Huge\+Float$\ast$ huge\+Float);}
+\item {\ttfamily int get\+Huge\+Float\+Length (Huge\+Float$\ast$ huge\+Float);}
+\end{DoxyItemize}
+\item Huge\+Float.\+c
+\item \mbox{\hyperlink{_huge_int_8h}{Huge\+Int.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily typedef enum Sign;}
+\item {\ttfamily typedef struct \mbox{\hyperlink{struct_huge_int}{Huge\+Int}};}
+\item {\ttfamily Huge\+Int$\ast$ create\+Huge\+Int (void);}
+\item {\ttfamily Huge\+Int$\ast$ create\+Huge\+Int\+From\+String (char$\ast$ digit\+String);}
+\item {\ttfamily Huge\+Int$\ast$ create\+Huge\+Int\+From\+Huge\+Int (Huge\+Int$\ast$ huge\+Int, unsigned int size);}
+\item {\ttfamily void delete\+Huge\+Int (Huge\+Int$\ast$ huge\+Int);}
+\item {\ttfamily int get\+Huge\+Int\+Length (Huge\+Int$\ast$ huge\+Int);}
+\item {\ttfamily Huge\+Int$\ast$ simplify\+Huge\+Int (Huge\+Int$\ast$ huge\+Int);}
+\end{DoxyItemize}
+\item Huge\+Int.\+c
+\item \mbox{\hyperlink{_huge_unsigned_int_8h}{Huge\+Unsigned\+Int.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily Huge\+Unsigned\+Int$\ast$ create\+Huge\+Unsigned\+Int (void);}
+\item {\ttfamily Huge\+Unsigned\+Int$\ast$ create\+Huge\+Unsigned\+Int\+From\+String (char$\ast$ digit\+String);}
+\item {\ttfamily Huge\+Unsigned\+Int$\ast$ create\+Huge\+Unsigned\+Int\+From\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int, unsigned int size);}
+\item {\ttfamily void delete\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int);}
+\item {\ttfamily int get\+Huge\+Unsigned\+Int\+Length (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int);}
+\item {\ttfamily Huge\+Unsigned\+Int$\ast$ simplify\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int);}
+\end{DoxyItemize}
+\item Huge\+Unsigned\+Int.\+c
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item \textbackslash{}\+I\+H\+M\+Huge\+Number
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_scan_huge_number_8h_source}{Scan\+Huge\+Number.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily Huge\+Int$\ast$ scan\+Huge\+Int (void);}
+\item {\ttfamily Huge\+Int$\ast$ scan\+Huge\+Unsigned\+Int (void);}
+\end{DoxyItemize}
+\item \mbox{\hyperlink{_scan_huge_number_8h_source}{Scan\+Huge\+Number.\+h}}
+\item \mbox{\hyperlink{_show_huge_number_8h_source}{Show\+Huge\+Number.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily void print\+Huge\+Unsigned\+Int (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int);}
+\item {\ttfamily void print\+Huge\+Int (Huge\+Int$\ast$ huge\+Int);}
+\item {\ttfamily void print\+Huge\+Float (Huge\+Float$\ast$ huge\+Float);}
+\end{DoxyItemize}
+\item \mbox{\hyperlink{_show_huge_number_8h_source}{Show\+Huge\+Number.\+h}}
+\begin{DoxyItemize}
+\item {\ttfamily char$\ast$ Huge\+Unsigned\+Int\+To\+String (Huge\+Unsigned\+Int$\ast$ huge\+Unsigned\+Int);}
+\item {\ttfamily char$\ast$ Huge\+Int\+To\+String (Huge\+Int$\ast$ huge\+Int);}
+\item {\ttfamily $\ast$ Huge\+Float\+To\+String (Huge\+Float$\ast$ huge\+Float);} 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}

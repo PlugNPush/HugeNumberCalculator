@@ -1,0 +1,209 @@
+\hypertarget{_huge_int_8h}{}\doxysection{Huge\+Number\+Calculator/\+Use\+Huge\+Number/\+Type/\+Huge\+Int.h File Reference}
+\label{_huge_int_8h}\index{HugeNumberCalculator/UseHugeNumber/Type/HugeInt.h@{HugeNumberCalculator/UseHugeNumber/Type/HugeInt.h}}
+
+
+Header of the library allowing the management of \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}.  
+
+
+{\ttfamily \#include \char`\"{}Huge\+Unsigned\+Int.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_huge_int_8h_ad621f1c7be869436ac9a8569f46e4900}\label{_huge_int_8h_ad621f1c7be869436ac9a8569f46e4900}} 
+typedef enum \mbox{\hyperlink{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cb}{Sign}} {\bfseries Sign}
+\item 
+\mbox{\Hypertarget{_huge_int_8h_a6585ba7a47442099a4754b1a4dca5f02}\label{_huge_int_8h_a6585ba7a47442099a4754b1a4dca5f02}} 
+typedef struct \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} \mbox{\hyperlink{_huge_int_8h_a6585ba7a47442099a4754b1a4dca5f02}{Huge\+Int}}
+\begin{DoxyCompactList}\small\item\em a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} is a Huge\+Unsigned\+Int with a sign. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cb}{Sign}} \{ \mbox{\hyperlink{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cba87fe59ef12c3d13dc2a4d14c9b16c1f9}{P\+L\+US}}, 
+\mbox{\hyperlink{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cbaf613d73b4e7b570ffd967df4a13c4225}{M\+I\+N\+US}}
+ \}
+\begin{DoxyCompactList}\small\item\em a simply enum to manage the sign of a Huge\+Unsigned\+Int. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$ \mbox{\hyperlink{_huge_int_8h_ab93eb8277c1f800c996262f8a4f70a50}{create\+Huge\+Int}} (void)
+\begin{DoxyCompactList}\small\item\em Function to create an empty \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$ \mbox{\hyperlink{_huge_int_8h_a1a27262c0eb19303beae91cebec260e9}{create\+Huge\+Int\+From\+String}} (const char $\ast$digit\+String)
+\begin{DoxyCompactList}\small\item\em Function to create an initialized \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$ \mbox{\hyperlink{_huge_int_8h_abaf4d0573229db765f4f4cc72320f6e2}{create\+Huge\+Int\+From\+Huge\+Int}} (const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$huge\+Int, const unsigned int size)
+\begin{DoxyCompactList}\small\item\em Function to create a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} initialized with the {\ttfamily size} initial values of another \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. The sign is always copied. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_huge_int_8h_a9ac25cc1c81d94199e9a3eb159c5f795}{delete\+Huge\+Int}} (\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$huge\+Int)
+\begin{DoxyCompactList}\small\item\em Function to delete a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} and free its memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_huge_int_8h_a4d7e5ada1222eede1c75aa2dd4b1fe4a}{get\+Huge\+Int\+Length}} (const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$huge\+Int)
+\begin{DoxyCompactList}\small\item\em Function to know the length of a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$ \mbox{\hyperlink{_huge_int_8h_af95097c0bbde218d8b8d743eec89001e}{simplify\+Huge\+Int}} (\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$huge\+Int)
+\begin{DoxyCompactList}\small\item\em Function to simplify a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. ~\newline
+ By simplify i mean delete the {\ttfamily 0} before the real value of the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of the library allowing the management of \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cb}\label{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cb}} 
+\index{HugeInt.h@{HugeInt.h}!Sign@{Sign}}
+\index{Sign@{Sign}!HugeInt.h@{HugeInt.h}}
+\doxysubsubsection{\texorpdfstring{Sign}{Sign}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cb}{Sign}}}
+
+
+
+a simply enum to manage the sign of a Huge\+Unsigned\+Int. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLUS@{PLUS}!HugeInt.h@{HugeInt.h}}\index{HugeInt.h@{HugeInt.h}!PLUS@{PLUS}}}\mbox{\Hypertarget{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cba87fe59ef12c3d13dc2a4d14c9b16c1f9}\label{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cba87fe59ef12c3d13dc2a4d14c9b16c1f9}} 
+P\+L\+US&the value that represents the plus sign \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MINUS@{MINUS}!HugeInt.h@{HugeInt.h}}\index{HugeInt.h@{HugeInt.h}!MINUS@{MINUS}}}\mbox{\Hypertarget{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cbaf613d73b4e7b570ffd967df4a13c4225}\label{_huge_int_8h_ad870f3a2c3baacb65e34071ae73c66cbaf613d73b4e7b570ffd967df4a13c4225}} 
+M\+I\+N\+US&the value that represents the minus sign \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_huge_int_8h_ab93eb8277c1f800c996262f8a4f70a50}\label{_huge_int_8h_ab93eb8277c1f800c996262f8a4f70a50}} 
+\index{HugeInt.h@{HugeInt.h}!createHugeInt@{createHugeInt}}
+\index{createHugeInt@{createHugeInt}!HugeInt.h@{HugeInt.h}}
+\doxysubsubsection{\texorpdfstring{createHugeInt()}{createHugeInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}$\ast$ create\+Huge\+Int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to create an empty \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. 
+
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_int_8h_abaf4d0573229db765f4f4cc72320f6e2}\label{_huge_int_8h_abaf4d0573229db765f4f4cc72320f6e2}} 
+\index{HugeInt.h@{HugeInt.h}!createHugeIntFromHugeInt@{createHugeIntFromHugeInt}}
+\index{createHugeIntFromHugeInt@{createHugeIntFromHugeInt}!HugeInt.h@{HugeInt.h}}
+\doxysubsubsection{\texorpdfstring{createHugeIntFromHugeInt()}{createHugeIntFromHugeInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}$\ast$ create\+Huge\+Int\+From\+Huge\+Int (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$}]{huge\+Int,  }\item[{const unsigned int}]{size }\end{DoxyParamCaption})}
+
+
+
+Function to create a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} initialized with the {\ttfamily size} initial values of another \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. The sign is always copied. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Copy the sign and all the values of hugeIntSource in the new hugeIntDest}}
+\DoxyCodeLine{\mbox{\hyperlink{struct_huge_int}{HugeInt}}* hugeIntDest = \mbox{\hyperlink{_huge_int_8h_abaf4d0573229db765f4f4cc72320f6e2}{createHugeIntFromHugeInt}}(hugeIntSource, -\/1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Copy the sign and just the first 5 values of hugeIntSource in the new hugeIntDest}}
+\DoxyCodeLine{\mbox{\hyperlink{struct_huge_int}{HugeInt}}* hugeIntDest = \mbox{\hyperlink{_huge_int_8h_abaf4d0573229db765f4f4cc72320f6e2}{createHugeIntFromHugeInt}}(hugeIntSource, 5);}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em huge\+Int} & the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} to copy. \\
+\hline
+{\em size} & the number of values to copy, enter {\ttfamily -\/1} to copy all the values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_int_8h_a1a27262c0eb19303beae91cebec260e9}\label{_huge_int_8h_a1a27262c0eb19303beae91cebec260e9}} 
+\index{HugeInt.h@{HugeInt.h}!createHugeIntFromString@{createHugeIntFromString}}
+\index{createHugeIntFromString@{createHugeIntFromString}!HugeInt.h@{HugeInt.h}}
+\doxysubsubsection{\texorpdfstring{createHugeIntFromString()}{createHugeIntFromString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}$\ast$ create\+Huge\+Int\+From\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{digit\+String }\end{DoxyParamCaption})}
+
+
+
+Function to create an initialized \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_huge_int}{HugeInt}}* hugeInt = \mbox{\hyperlink{_huge_int_8h_a1a27262c0eb19303beae91cebec260e9}{createHugeIntFromString}}(\textcolor{stringliteral}{"{}+12345678901234567890"{}});}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em digit\+String} & a string wtih the sign and the integer used to initialized the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_int_8h_a9ac25cc1c81d94199e9a3eb159c5f795}\label{_huge_int_8h_a9ac25cc1c81d94199e9a3eb159c5f795}} 
+\index{HugeInt.h@{HugeInt.h}!deleteHugeInt@{deleteHugeInt}}
+\index{deleteHugeInt@{deleteHugeInt}!HugeInt.h@{HugeInt.h}}
+\doxysubsubsection{\texorpdfstring{deleteHugeInt()}{deleteHugeInt()}}
+{\footnotesize\ttfamily void delete\+Huge\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$}]{huge\+Int }\end{DoxyParamCaption})}
+
+
+
+Function to delete a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} and free its memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Int} & a pointer to the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_huge_int_8h_a4d7e5ada1222eede1c75aa2dd4b1fe4a}\label{_huge_int_8h_a4d7e5ada1222eede1c75aa2dd4b1fe4a}} 
+\index{HugeInt.h@{HugeInt.h}!getHugeIntLength@{getHugeIntLength}}
+\index{getHugeIntLength@{getHugeIntLength}!HugeInt.h@{HugeInt.h}}
+\doxysubsubsection{\texorpdfstring{getHugeIntLength()}{getHugeIntLength()}}
+{\footnotesize\ttfamily int get\+Huge\+Int\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$}]{huge\+Int }\end{DoxyParamCaption})}
+
+
+
+Function to know the length of a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Int} & a pointer to the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int that represents the length of the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_int_8h_af95097c0bbde218d8b8d743eec89001e}\label{_huge_int_8h_af95097c0bbde218d8b8d743eec89001e}} 
+\index{HugeInt.h@{HugeInt.h}!simplifyHugeInt@{simplifyHugeInt}}
+\index{simplifyHugeInt@{simplifyHugeInt}!HugeInt.h@{HugeInt.h}}
+\doxysubsubsection{\texorpdfstring{simplifyHugeInt()}{simplifyHugeInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}$\ast$ simplify\+Huge\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$}]{huge\+Int }\end{DoxyParamCaption})}
+
+
+
+Function to simplify a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. ~\newline
+ By simplify i mean delete the {\ttfamily 0} before the real value of the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Int} & a pointer to the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} to simplify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} simplified. 
+
+{\ttfamily N\+U\+LL}, if an error occurs. 
+\end{DoxyReturn}
