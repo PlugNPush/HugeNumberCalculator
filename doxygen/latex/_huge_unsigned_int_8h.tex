@@ -1,0 +1,171 @@
+\hypertarget{_huge_unsigned_int_8h}{}\doxysection{Huge\+Number\+Calculator/\+Use\+Huge\+Number/\+Type/\+Huge\+Unsigned\+Int.h File Reference}
+\label{_huge_unsigned_int_8h}\index{HugeNumberCalculator/UseHugeNumber/Type/HugeUnsignedInt.h@{HugeNumberCalculator/UseHugeNumber/Type/HugeUnsignedInt.h}}
+
+
+Header of the library allowing the management of Huge\+Unsigned\+Int.  
+
+
+{\ttfamily \#include \char`\"{}../../\+Data\+Types/\+Doubly\+Linked\+List.\+h\char`\"{}}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}\label{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}} 
+typedef \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}}
+\begin{DoxyCompactList}\small\item\em a simple typedef to facilitate the use of Huge\+Unsigned\+Int. Yes it is not really essential but it will allow future evolutions more easily. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$ \mbox{\hyperlink{_huge_unsigned_int_8h_a50f407e5011b2bc18ed0afa72c0db514}{create\+Huge\+Unsigned\+Int}} (void)
+\begin{DoxyCompactList}\small\item\em Function to create an empty Huge\+Unsigned\+Int. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$ \mbox{\hyperlink{_huge_unsigned_int_8h_acd61ecdb661893a673cc67849d305d28}{create\+Huge\+Unsigned\+Int\+From\+String}} (const char $\ast$digit\+String)
+\begin{DoxyCompactList}\small\item\em Function to create an initialized Huge\+Unsigned\+Int. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$ \mbox{\hyperlink{_huge_unsigned_int_8h_ad521790faec13832daa9f0de030d2344}{create\+Huge\+Unsigned\+Int\+From\+Huge\+Unsigned\+Int}} (const \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$huge\+Unsigned\+Int, const unsigned int size)
+\begin{DoxyCompactList}\small\item\em Function to create a Huge\+Unsigned\+Int initialized with the {\ttfamily size} initial values of another Huge\+Unsigned\+Int. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_huge_unsigned_int_8h_a5f3d8f601700e032129266e5e917a8a9}{delete\+Huge\+Unsigned\+Int}} (\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$huge\+Unsigned\+Int)
+\begin{DoxyCompactList}\small\item\em Function to delete a Huge\+Unsigned\+Int and free its memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_huge_unsigned_int_8h_a8f9673dbd49743b73291b00378c397f3}{get\+Huge\+Unsigned\+Int\+Length}} (const \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$huge\+Unsigned\+Int)
+\begin{DoxyCompactList}\small\item\em Function to know the length of a Huge\+Unsigned\+Int. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$ \mbox{\hyperlink{_huge_unsigned_int_8h_abef7b623f54d5ef57e36eccd305fde5e}{simplify\+Huge\+Unsigned\+Int}} (\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$huge\+Unsigned\+Int)
+\begin{DoxyCompactList}\small\item\em Function to simplify a Huge\+Unsigned\+Int. ~\newline
+ By simplify i mean delete the {\ttfamily 0} before the real value of the Huge\+Unsigned\+Int. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of the library allowing the management of Huge\+Unsigned\+Int. 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_huge_unsigned_int_8h_a50f407e5011b2bc18ed0afa72c0db514}\label{_huge_unsigned_int_8h_a50f407e5011b2bc18ed0afa72c0db514}} 
+\index{HugeUnsignedInt.h@{HugeUnsignedInt.h}!createHugeUnsignedInt@{createHugeUnsignedInt}}
+\index{createHugeUnsignedInt@{createHugeUnsignedInt}!HugeUnsignedInt.h@{HugeUnsignedInt.h}}
+\doxysubsubsection{\texorpdfstring{createHugeUnsignedInt()}{createHugeUnsignedInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}}$\ast$ create\+Huge\+Unsigned\+Int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to create an empty Huge\+Unsigned\+Int. 
+
+\begin{DoxyReturn}{Returns}
+the Huge\+Unsigned\+Int\textquotesingle{}s pointer, if the Huge\+Unsigned\+Int is created. 
+
+{\ttfamily N\+U\+LL}, if the Huge\+Unsigned\+Int could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_unsigned_int_8h_ad521790faec13832daa9f0de030d2344}\label{_huge_unsigned_int_8h_ad521790faec13832daa9f0de030d2344}} 
+\index{HugeUnsignedInt.h@{HugeUnsignedInt.h}!createHugeUnsignedIntFromHugeUnsignedInt@{createHugeUnsignedIntFromHugeUnsignedInt}}
+\index{createHugeUnsignedIntFromHugeUnsignedInt@{createHugeUnsignedIntFromHugeUnsignedInt}!HugeUnsignedInt.h@{HugeUnsignedInt.h}}
+\doxysubsubsection{\texorpdfstring{createHugeUnsignedIntFromHugeUnsignedInt()}{createHugeUnsignedIntFromHugeUnsignedInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}}$\ast$ create\+Huge\+Unsigned\+Int\+From\+Huge\+Unsigned\+Int (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$}]{huge\+Unsigned\+Int,  }\item[{const unsigned int}]{size }\end{DoxyParamCaption})}
+
+
+
+Function to create a Huge\+Unsigned\+Int initialized with the {\ttfamily size} initial values of another Huge\+Unsigned\+Int. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Copy all the values of hugeUnsignedIntSource in the new hugeUnsignedIntDest}}
+\DoxyCodeLine{\mbox{\hyperlink{struct_doubly_linked_list}{HugeUnsignedInt}}* hugeUnsignedIntDest = \mbox{\hyperlink{_huge_unsigned_int_8h_ad521790faec13832daa9f0de030d2344}{createHugeUnsignedIntFromHugeUnsignedInt}}(hugeUnsignedIntSource, -\/1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Copy just the first 5 values of hugeUnsignedIntSource in the new hugeUnsignedIntDest}}
+\DoxyCodeLine{\mbox{\hyperlink{struct_doubly_linked_list}{HugeUnsignedInt}}* hugeUnsignedIntDest = \mbox{\hyperlink{_huge_unsigned_int_8h_ad521790faec13832daa9f0de030d2344}{createHugeUnsignedIntFromHugeUnsignedInt}}(hugeUnsignedIntSource, 5);}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em huge\+Unsigned\+Int} & the Huge\+Unsigned\+Int to copy. \\
+\hline
+{\em size} & the number of values to copy, enter {\ttfamily -\/1} to copy all the values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Huge\+Unsigned\+Int\textquotesingle{}s pointer, if the Huge\+Unsigned\+Int is created. 
+
+{\ttfamily N\+U\+LL}, if the Huge\+Unsigned\+Int could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_unsigned_int_8h_acd61ecdb661893a673cc67849d305d28}\label{_huge_unsigned_int_8h_acd61ecdb661893a673cc67849d305d28}} 
+\index{HugeUnsignedInt.h@{HugeUnsignedInt.h}!createHugeUnsignedIntFromString@{createHugeUnsignedIntFromString}}
+\index{createHugeUnsignedIntFromString@{createHugeUnsignedIntFromString}!HugeUnsignedInt.h@{HugeUnsignedInt.h}}
+\doxysubsubsection{\texorpdfstring{createHugeUnsignedIntFromString()}{createHugeUnsignedIntFromString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}}$\ast$ create\+Huge\+Unsigned\+Int\+From\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{digit\+String }\end{DoxyParamCaption})}
+
+
+
+Function to create an initialized Huge\+Unsigned\+Int. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_doubly_linked_list}{HugeUnsignedInt}}* hugeUnsignedInt = \mbox{\hyperlink{_huge_unsigned_int_8h_acd61ecdb661893a673cc67849d305d28}{createHugeUnsignedIntFromString}}(\textcolor{stringliteral}{"{}12345678901234567890"{}});}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em digit\+String} & a string wtih the integer used to initialized the Huge\+Unsigned\+Int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Huge\+Unsigned\+Int\textquotesingle{}s pointer, if the Huge\+Unsigned\+Int is created. 
+
+{\ttfamily N\+U\+LL}, if the Huge\+Unsigned\+Int could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_unsigned_int_8h_a5f3d8f601700e032129266e5e917a8a9}\label{_huge_unsigned_int_8h_a5f3d8f601700e032129266e5e917a8a9}} 
+\index{HugeUnsignedInt.h@{HugeUnsignedInt.h}!deleteHugeUnsignedInt@{deleteHugeUnsignedInt}}
+\index{deleteHugeUnsignedInt@{deleteHugeUnsignedInt}!HugeUnsignedInt.h@{HugeUnsignedInt.h}}
+\doxysubsubsection{\texorpdfstring{deleteHugeUnsignedInt()}{deleteHugeUnsignedInt()}}
+{\footnotesize\ttfamily void delete\+Huge\+Unsigned\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$}]{huge\+Unsigned\+Int }\end{DoxyParamCaption})}
+
+
+
+Function to delete a Huge\+Unsigned\+Int and free its memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Unsigned\+Int} & a pointer to the Huge\+Unsigned\+Int to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_huge_unsigned_int_8h_a8f9673dbd49743b73291b00378c397f3}\label{_huge_unsigned_int_8h_a8f9673dbd49743b73291b00378c397f3}} 
+\index{HugeUnsignedInt.h@{HugeUnsignedInt.h}!getHugeUnsignedIntLength@{getHugeUnsignedIntLength}}
+\index{getHugeUnsignedIntLength@{getHugeUnsignedIntLength}!HugeUnsignedInt.h@{HugeUnsignedInt.h}}
+\doxysubsubsection{\texorpdfstring{getHugeUnsignedIntLength()}{getHugeUnsignedIntLength()}}
+{\footnotesize\ttfamily int get\+Huge\+Unsigned\+Int\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$}]{huge\+Unsigned\+Int }\end{DoxyParamCaption})}
+
+
+
+Function to know the length of a Huge\+Unsigned\+Int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Unsigned\+Int} & a pointer to the Huge\+Unsigned\+Int to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int that represents the length of the Huge\+Unsigned\+Int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_unsigned_int_8h_abef7b623f54d5ef57e36eccd305fde5e}\label{_huge_unsigned_int_8h_abef7b623f54d5ef57e36eccd305fde5e}} 
+\index{HugeUnsignedInt.h@{HugeUnsignedInt.h}!simplifyHugeUnsignedInt@{simplifyHugeUnsignedInt}}
+\index{simplifyHugeUnsignedInt@{simplifyHugeUnsignedInt}!HugeUnsignedInt.h@{HugeUnsignedInt.h}}
+\doxysubsubsection{\texorpdfstring{simplifyHugeUnsignedInt()}{simplifyHugeUnsignedInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}}$\ast$ simplify\+Huge\+Unsigned\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_huge_unsigned_int_8h_a409afa06df045fa0434596226e7950fd}{Huge\+Unsigned\+Int}} $\ast$}]{huge\+Unsigned\+Int }\end{DoxyParamCaption})}
+
+
+
+Function to simplify a Huge\+Unsigned\+Int. ~\newline
+ By simplify i mean delete the {\ttfamily 0} before the real value of the Huge\+Unsigned\+Int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Unsigned\+Int} & a pointer to the Huge\+Unsigned\+Int to simplify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Huge\+Unsigned\+Int\textquotesingle{}s pointer, if the Huge\+Unsigned\+Int simplified. 
+
+{\ttfamily N\+U\+LL}, if an error occurs. 
+\end{DoxyReturn}

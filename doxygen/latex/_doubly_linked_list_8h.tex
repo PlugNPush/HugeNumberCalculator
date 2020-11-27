@@ -1,0 +1,273 @@
+\hypertarget{_doubly_linked_list_8h}{}\doxysection{Huge\+Number\+Calculator/\+Data\+Types/\+Doubly\+Linked\+List.h File Reference}
+\label{_doubly_linked_list_8h}\index{HugeNumberCalculator/DataTypes/DoublyLinkedList.h@{HugeNumberCalculator/DataTypes/DoublyLinkedList.h}}
+
+
+Header of the library allowing the management of double-\/linked list on unsigned short.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}}
+\item 
+struct \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}\label{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}} 
+typedef unsigned short \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}}
+\begin{DoxyCompactList}\small\item\em a simple typedef to facilitate the use of unsigned short. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_doubly_linked_list_8h_a9cf2efdb4ec5c59749c71c81ce1cf726}\label{_doubly_linked_list_8h_a9cf2efdb4ec5c59749c71c81ce1cf726}} 
+typedef struct \mbox{\hyperlink{struct_node}{Node}} \mbox{\hyperlink{_doubly_linked_list_8h_a9cf2efdb4ec5c59749c71c81ce1cf726}{Node}}
+\begin{DoxyCompactList}\small\item\em node of the double-\/linked list, it owns two pointers \+: next and previous. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_doubly_linked_list_8h_ad6167e6f89520ec637c604730e636c22}\label{_doubly_linked_list_8h_ad6167e6f89520ec637c604730e636c22}} 
+typedef struct \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} \mbox{\hyperlink{_doubly_linked_list_8h_ad6167e6f89520ec637c604730e636c22}{Doubly\+Linked\+List}}
+\begin{DoxyCompactList}\small\item\em the double-\/linked list with two pointers \+: start and end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_doubly_linked_list_8h_a374af42228d2cfb14f8111c305dac19e}{add\+Digit\+At\+Start}} (\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$doubly\+Linked\+List, const \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}} digit)
+\begin{DoxyCompactList}\small\item\em Function to add a digit at the start af a double-\/linked list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_doubly_linked_list_8h_a3aaf67d59720fbc7bace69ad9f0c057b}{add\+Digit\+At\+End}} (\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$doubly\+Linked\+List, const \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}} digit)
+\begin{DoxyCompactList}\small\item\em Function to add a digit at the end af a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_doubly_linked_list_8h_a84fa1d595f33104931319cfb89e91920}{is\+Node\+Empty}} (const \mbox{\hyperlink{struct_node}{Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Function to know if a node is empty, empty means it points to N\+U\+LL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$ \mbox{\hyperlink{_doubly_linked_list_8h_a10ab989616e371d74d7e066442c3aa9a}{create\+Doubly\+Linked\+List}} (void)
+\begin{DoxyCompactList}\small\item\em Function to create an empty \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$ \mbox{\hyperlink{_doubly_linked_list_8h_a6a07334fd23a7340dc3f2cf480720531}{create\+Doubly\+Linked\+List\+From\+String}} (const char $\ast$digit\+String)
+\begin{DoxyCompactList}\small\item\em Function to create an initialized \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_doubly_linked_list_8h_a813d3b4d176f93627930782459421f98}{digit\+To\+Char}} (const \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}} digit)
+\begin{DoxyCompactList}\small\item\em Function to convert a char to a Digit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_doubly_linked_list_8h_a21b8da26b23aee7a2b2e72d5b23b436d}{delete\+Doubly\+Linked\+List}} (\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$doubly\+Linked\+List)
+\begin{DoxyCompactList}\small\item\em Function to delete a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} and free its memory and all its nodes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_doubly_linked_list_8h_a7a0e48d42a8ac75553ffddbaee6cb4c5}{get\+Doubly\+Linked\+List\+Length}} (const \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$doubly\+Linked\+List)
+\begin{DoxyCompactList}\small\item\em Function to know the length of a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_doubly_linked_list_8h_a888f58d614d7dd872d15e19515ed82ef}{remove\+Start\+From\+Doubly\+Linked\+List}} (\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$doubly\+Linked\+List)
+\begin{DoxyCompactList}\small\item\em Function to delete the first \mbox{\hyperlink{struct_node}{Node}} of a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_doubly_linked_list_8h_afee2bb4698ee9a8cfc1eb786fe1a5ad5}{remove\+End\+From\+Doubly\+Linked\+List}} (\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$doubly\+Linked\+List)
+\begin{DoxyCompactList}\small\item\em Function to delete the last \mbox{\hyperlink{struct_node}{Node}} of a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}} \mbox{\hyperlink{_doubly_linked_list_8h_ad1b4b61b0d101ba166cd44d6721bf8d8}{get\+Digit\+By\+Place\+From\+Start}} (const \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$doubly\+Linked\+List, const unsigned int place)
+\begin{DoxyCompactList}\small\item\em Function to obtain the Digit contained in a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} by its place number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of the library allowing the management of double-\/linked list on unsigned short. 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a3aaf67d59720fbc7bace69ad9f0c057b}\label{_doubly_linked_list_8h_a3aaf67d59720fbc7bace69ad9f0c057b}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!addDigitAtEnd@{addDigitAtEnd}}
+\index{addDigitAtEnd@{addDigitAtEnd}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{addDigitAtEnd()}{addDigitAtEnd()}}
+{\footnotesize\ttfamily int add\+Digit\+At\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$}]{doubly\+Linked\+List,  }\item[{const \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}}}]{digit }\end{DoxyParamCaption})}
+
+
+
+Function to add a digit at the end af a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doubly\+Linked\+List} & a pointer to the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} to modifiy. \\
+\hline
+{\em digit} & the digit to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily 1}, if it\textquotesingle{}s a success. 
+
+{\ttfamily 0}, if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a374af42228d2cfb14f8111c305dac19e}\label{_doubly_linked_list_8h_a374af42228d2cfb14f8111c305dac19e}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!addDigitAtStart@{addDigitAtStart}}
+\index{addDigitAtStart@{addDigitAtStart}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{addDigitAtStart()}{addDigitAtStart()}}
+{\footnotesize\ttfamily int add\+Digit\+At\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$}]{doubly\+Linked\+List,  }\item[{const \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}}}]{digit }\end{DoxyParamCaption})}
+
+
+
+Function to add a digit at the start af a double-\/linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doubly\+Linked\+List} & a pointer to the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} to modifiy. \\
+\hline
+{\em digit} & the digit to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily 1}, if it\textquotesingle{}s a success. 
+
+{\ttfamily 0}, if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a10ab989616e371d74d7e066442c3aa9a}\label{_doubly_linked_list_8h_a10ab989616e371d74d7e066442c3aa9a}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!createDoublyLinkedList@{createDoublyLinkedList}}
+\index{createDoublyLinkedList@{createDoublyLinkedList}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{createDoublyLinkedList()}{createDoublyLinkedList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}$\ast$ create\+Doubly\+Linked\+List (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to create an empty \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. 
+
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a6a07334fd23a7340dc3f2cf480720531}\label{_doubly_linked_list_8h_a6a07334fd23a7340dc3f2cf480720531}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!createDoublyLinkedListFromString@{createDoublyLinkedListFromString}}
+\index{createDoublyLinkedListFromString@{createDoublyLinkedListFromString}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{createDoublyLinkedListFromString()}{createDoublyLinkedListFromString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}$\ast$ create\+Doubly\+Linked\+List\+From\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{digit\+String }\end{DoxyParamCaption})}
+
+
+
+Function to create an initialized \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_doubly_linked_list}{DoublyLinkedList}}* doublyLinkedList = \mbox{\hyperlink{_doubly_linked_list_8h_a6a07334fd23a7340dc3f2cf480720531}{createDoublyLinkedListFromString}}(\textcolor{stringliteral}{"{}12345678901234567890"{}});}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em digit\+String} & a string wtih the integer used to initialized the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a21b8da26b23aee7a2b2e72d5b23b436d}\label{_doubly_linked_list_8h_a21b8da26b23aee7a2b2e72d5b23b436d}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!deleteDoublyLinkedList@{deleteDoublyLinkedList}}
+\index{deleteDoublyLinkedList@{deleteDoublyLinkedList}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{deleteDoublyLinkedList()}{deleteDoublyLinkedList()}}
+{\footnotesize\ttfamily void delete\+Doubly\+Linked\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$}]{doubly\+Linked\+List }\end{DoxyParamCaption})}
+
+
+
+Function to delete a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} and free its memory and all its nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doubly\+Linked\+List} & a pointer to the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a813d3b4d176f93627930782459421f98}\label{_doubly_linked_list_8h_a813d3b4d176f93627930782459421f98}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!digitToChar@{digitToChar}}
+\index{digitToChar@{digitToChar}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{digitToChar()}{digitToChar()}}
+{\footnotesize\ttfamily char digit\+To\+Char (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}}}]{digit }\end{DoxyParamCaption})}
+
+
+
+Function to convert a char to a Digit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em digit} & a Digit to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the {\ttfamily Digit} converted to char. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_ad1b4b61b0d101ba166cd44d6721bf8d8}\label{_doubly_linked_list_8h_ad1b4b61b0d101ba166cd44d6721bf8d8}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!getDigitByPlaceFromStart@{getDigitByPlaceFromStart}}
+\index{getDigitByPlaceFromStart@{getDigitByPlaceFromStart}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{getDigitByPlaceFromStart()}{getDigitByPlaceFromStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_doubly_linked_list_8h_ac296ba4aa4e5c4664ba93a299130d279}{Digit}} get\+Digit\+By\+Place\+From\+Start (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$}]{doubly\+Linked\+List,  }\item[{const unsigned int}]{place }\end{DoxyParamCaption})}
+
+
+
+Function to obtain the Digit contained in a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} by its place number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doubly\+Linked\+List} & a pointer to the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} to query. \\
+\hline
+{\em place} & an {\ttfamily unsigned} {\ttfamily int} that represents the place number of the desired Digit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Digit contained at the place {\ttfamily place}. 
+
+{\ttfamily -\/1}, if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a7a0e48d42a8ac75553ffddbaee6cb4c5}\label{_doubly_linked_list_8h_a7a0e48d42a8ac75553ffddbaee6cb4c5}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!getDoublyLinkedListLength@{getDoublyLinkedListLength}}
+\index{getDoublyLinkedListLength@{getDoublyLinkedListLength}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{getDoublyLinkedListLength()}{getDoublyLinkedListLength()}}
+{\footnotesize\ttfamily int get\+Doubly\+Linked\+List\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$}]{doubly\+Linked\+List }\end{DoxyParamCaption})}
+
+
+
+Function to know the length of a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doubly\+Linked\+List} & a pointer to the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int that represents the length of the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a84fa1d595f33104931319cfb89e91920}\label{_doubly_linked_list_8h_a84fa1d595f33104931319cfb89e91920}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!isNodeEmpty@{isNodeEmpty}}
+\index{isNodeEmpty@{isNodeEmpty}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{isNodeEmpty()}{isNodeEmpty()}}
+{\footnotesize\ttfamily int is\+Node\+Empty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Function to know if a node is empty, empty means it points to N\+U\+LL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & a pointer to the \mbox{\hyperlink{struct_node}{Node}} to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily 1}, if the node is empty. 
+
+{\ttfamily 0}, if the node is not empty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_doubly_linked_list_8h_afee2bb4698ee9a8cfc1eb786fe1a5ad5}\label{_doubly_linked_list_8h_afee2bb4698ee9a8cfc1eb786fe1a5ad5}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!removeEndFromDoublyLinkedList@{removeEndFromDoublyLinkedList}}
+\index{removeEndFromDoublyLinkedList@{removeEndFromDoublyLinkedList}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{removeEndFromDoublyLinkedList()}{removeEndFromDoublyLinkedList()}}
+{\footnotesize\ttfamily void remove\+End\+From\+Doubly\+Linked\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$}]{doubly\+Linked\+List }\end{DoxyParamCaption})}
+
+
+
+Function to delete the last \mbox{\hyperlink{struct_node}{Node}} of a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doubly\+Linked\+List} & a pointer to the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} to modify. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_doubly_linked_list_8h_a888f58d614d7dd872d15e19515ed82ef}\label{_doubly_linked_list_8h_a888f58d614d7dd872d15e19515ed82ef}} 
+\index{DoublyLinkedList.h@{DoublyLinkedList.h}!removeStartFromDoublyLinkedList@{removeStartFromDoublyLinkedList}}
+\index{removeStartFromDoublyLinkedList@{removeStartFromDoublyLinkedList}!DoublyLinkedList.h@{DoublyLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{removeStartFromDoublyLinkedList()}{removeStartFromDoublyLinkedList()}}
+{\footnotesize\ttfamily void remove\+Start\+From\+Doubly\+Linked\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} $\ast$}]{doubly\+Linked\+List }\end{DoxyParamCaption})}
+
+
+
+Function to delete the first \mbox{\hyperlink{struct_node}{Node}} of a \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doubly\+Linked\+List} & a pointer to the \mbox{\hyperlink{struct_doubly_linked_list}{Doubly\+Linked\+List}} to modify. \\
+\hline
+\end{DoxyParams}

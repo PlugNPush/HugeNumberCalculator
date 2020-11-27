@@ -1,0 +1,179 @@
+\hypertarget{_huge_float_8h}{}\doxysection{Huge\+Number\+Calculator/\+Use\+Huge\+Number/\+Type/\+Huge\+Float.h File Reference}
+\label{_huge_float_8h}\index{HugeNumberCalculator/UseHugeNumber/Type/HugeFloat.h@{HugeNumberCalculator/UseHugeNumber/Type/HugeFloat.h}}
+
+
+Header of the library allowing the management of \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}.  
+
+
+{\ttfamily \#include \char`\"{}Huge\+Int.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_huge_float_8h_a2c0e21367793142e5d8be1496809a4e8}\label{_huge_float_8h_a2c0e21367793142e5d8be1496809a4e8}} 
+typedef struct \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} \mbox{\hyperlink{_huge_float_8h_a2c0e21367793142e5d8be1496809a4e8}{Huge\+Float}}
+\begin{DoxyCompactList}\small\item\em a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} is composed by two \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}, one represents the significand and the other the exponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_float_8h_ad302d80d363f303536b427f823bc20b5}{create\+Huge\+Float}} (void)
+\begin{DoxyCompactList}\small\item\em Function to create an empty \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_float_8h_a2d4551149f914143931ea70186a12cdf}{create\+Huge\+Float\+From\+String}} (const char $\ast$significand\+String, const char $\ast$exponent\+String)
+\begin{DoxyCompactList}\small\item\em Function to create an initialized \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_float_8h_a19bed920343ae67c50faf8002e50552a}{create\+Huge\+Float\+From\+Huge\+Ints}} (const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$significand\+Huge\+Int, const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$exponent\+S\+Huge\+Int)
+\begin{DoxyCompactList}\small\item\em Function to create an initialized \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_float_8h_a6fd44947603dda09bc208e8dda8d0797}{create\+Huge\+Float\+From\+Huge\+Float}} (const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$huge\+Float, const unsigned int size)
+\begin{DoxyCompactList}\small\item\em Function to create a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} initialized with the {\ttfamily size} initial values of another \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. The sign and the exponent are always copied. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_huge_float_8h_acdc7fafbdbac764646effbdc6d29c457}{delete\+Huge\+Float}} (\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$huge\+Float)
+\begin{DoxyCompactList}\small\item\em Function to delete a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} and free its memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_huge_float_8h_a7068cc5dc976ec638a8c1b2b2dea07ea}{get\+Huge\+Float\+Length}} (const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$huge\+Float)
+\begin{DoxyCompactList}\small\item\em Function to know the length of a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of the library allowing the management of \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_huge_float_8h_ad302d80d363f303536b427f823bc20b5}\label{_huge_float_8h_ad302d80d363f303536b427f823bc20b5}} 
+\index{HugeFloat.h@{HugeFloat.h}!createHugeFloat@{createHugeFloat}}
+\index{createHugeFloat@{createHugeFloat}!HugeFloat.h@{HugeFloat.h}}
+\doxysubsubsection{\texorpdfstring{createHugeFloat()}{createHugeFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ create\+Huge\+Float (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to create an empty \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_float_8h_a6fd44947603dda09bc208e8dda8d0797}\label{_huge_float_8h_a6fd44947603dda09bc208e8dda8d0797}} 
+\index{HugeFloat.h@{HugeFloat.h}!createHugeFloatFromHugeFloat@{createHugeFloatFromHugeFloat}}
+\index{createHugeFloatFromHugeFloat@{createHugeFloatFromHugeFloat}!HugeFloat.h@{HugeFloat.h}}
+\doxysubsubsection{\texorpdfstring{createHugeFloatFromHugeFloat()}{createHugeFloatFromHugeFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ create\+Huge\+Float\+From\+Huge\+Float (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{huge\+Float,  }\item[{const unsigned int}]{size }\end{DoxyParamCaption})}
+
+
+
+Function to create a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} initialized with the {\ttfamily size} initial values of another \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. The sign and the exponent are always copied. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Copy the sign and all the values of hugeIntSource in the new hugeIntDest}}
+\DoxyCodeLine{\mbox{\hyperlink{struct_huge_float}{HugeFloat}}* hugeFloatDest = \mbox{\hyperlink{_huge_float_8h_a6fd44947603dda09bc208e8dda8d0797}{createHugeFloatFromHugeFloat}}(hugeFloatSource, -\/1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Copy the sign and just the first 5 values of hugeIntSource in the new hugeIntDest}}
+\DoxyCodeLine{\mbox{\hyperlink{struct_huge_float}{HugeFloat}}* hugeFloatDest = \mbox{\hyperlink{_huge_float_8h_a6fd44947603dda09bc208e8dda8d0797}{createHugeFloatFromHugeFloat}}(hugeFloatSource, 5);}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em huge\+Float} & the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} to copy. \\
+\hline
+{\em size} & the number of values to copy, enter {\ttfamily -\/1} to copy all the values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_float_8h_a19bed920343ae67c50faf8002e50552a}\label{_huge_float_8h_a19bed920343ae67c50faf8002e50552a}} 
+\index{HugeFloat.h@{HugeFloat.h}!createHugeFloatFromHugeInts@{createHugeFloatFromHugeInts}}
+\index{createHugeFloatFromHugeInts@{createHugeFloatFromHugeInts}!HugeFloat.h@{HugeFloat.h}}
+\doxysubsubsection{\texorpdfstring{createHugeFloatFromHugeInts()}{createHugeFloatFromHugeInts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ create\+Huge\+Float\+From\+Huge\+Ints (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$}]{significand\+Huge\+Int,  }\item[{const \mbox{\hyperlink{struct_huge_int}{Huge\+Int}} $\ast$}]{exponent\+S\+Huge\+Int }\end{DoxyParamCaption})}
+
+
+
+Function to create an initialized \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em significand\+Huge\+Int} & a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}\textquotesingle{}s pointer used to initialized the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s significand. \\
+\hline
+{\em exponent\+S\+Huge\+Int} & a \mbox{\hyperlink{struct_huge_int}{Huge\+Int}}\textquotesingle{}s pointer used to initialized the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s exponent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_float_8h_a2d4551149f914143931ea70186a12cdf}\label{_huge_float_8h_a2d4551149f914143931ea70186a12cdf}} 
+\index{HugeFloat.h@{HugeFloat.h}!createHugeFloatFromString@{createHugeFloatFromString}}
+\index{createHugeFloatFromString@{createHugeFloatFromString}!HugeFloat.h@{HugeFloat.h}}
+\doxysubsubsection{\texorpdfstring{createHugeFloatFromString()}{createHugeFloatFromString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ create\+Huge\+Float\+From\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{significand\+String,  }\item[{const char $\ast$}]{exponent\+String }\end{DoxyParamCaption})}
+
+
+
+Function to create an initialized \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_huge_float}{HugeFloat}}* hugeFloat = \mbox{\hyperlink{_huge_float_8h_a2d4551149f914143931ea70186a12cdf}{createHugeFloatFromString}}(\textcolor{stringliteral}{"{}+12345678901234567890"{}}, \textcolor{stringliteral}{"{}-\/12345678901234567890"{}});}
+\DoxyCodeLine{\textcolor{comment}{// Create a HugeFloat equal to +12345678901234567890 x 10\string^-\/12345678901234567890}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em significand\+String} & a string wtih the sign and the integer used to initialized the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s significand. \\
+\hline
+{\em exponent\+String} & a string wtih the sign and the integer used to initialized the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s exponent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_float_8h_acdc7fafbdbac764646effbdc6d29c457}\label{_huge_float_8h_acdc7fafbdbac764646effbdc6d29c457}} 
+\index{HugeFloat.h@{HugeFloat.h}!deleteHugeFloat@{deleteHugeFloat}}
+\index{deleteHugeFloat@{deleteHugeFloat}!HugeFloat.h@{HugeFloat.h}}
+\doxysubsubsection{\texorpdfstring{deleteHugeFloat()}{deleteHugeFloat()}}
+{\footnotesize\ttfamily void delete\+Huge\+Float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{huge\+Float }\end{DoxyParamCaption})}
+
+
+
+Function to delete a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} and free its memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Float} & a pointer to the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_huge_float_8h_a7068cc5dc976ec638a8c1b2b2dea07ea}\label{_huge_float_8h_a7068cc5dc976ec638a8c1b2b2dea07ea}} 
+\index{HugeFloat.h@{HugeFloat.h}!getHugeFloatLength@{getHugeFloatLength}}
+\index{getHugeFloatLength@{getHugeFloatLength}!HugeFloat.h@{HugeFloat.h}}
+\doxysubsubsection{\texorpdfstring{getHugeFloatLength()}{getHugeFloatLength()}}
+{\footnotesize\ttfamily int get\+Huge\+Float\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{huge\+Float }\end{DoxyParamCaption})}
+
+
+
+Function to know the length of a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Float} & a pointer to the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int that represents the length of the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+\end{DoxyReturn}
