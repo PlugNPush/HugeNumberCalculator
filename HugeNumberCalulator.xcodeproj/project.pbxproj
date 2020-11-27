@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED6D61B3257183D90095F37D /* DoublyLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D619E257183D90095F37D /* DoublyLinkedList.c */; };
+		ED6D61B4257183D90095F37D /* HugeIntOperator.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61A1257183D90095F37D /* HugeIntOperator.c */; };
+		ED6D61B5257183D90095F37D /* HugeUnsignedIntOperator.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61A2257183D90095F37D /* HugeUnsignedIntOperator.c */; };
+		ED6D61B6257183D90095F37D /* HugeFloatOperator.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61A6257183D90095F37D /* HugeFloatOperator.c */; };
+		ED6D61B7257183D90095F37D /* HugeFloat.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61A9257183D90095F37D /* HugeFloat.c */; };
+		ED6D61B8257183D90095F37D /* HugeInt.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61AB257183D90095F37D /* HugeInt.c */; };
+		ED6D61B9257183D90095F37D /* HugeUnsignedInt.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61AD257183D90095F37D /* HugeUnsignedInt.c */; };
+		ED6D61BA257183D90095F37D /* ShowHugeNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61AF257183D90095F37D /* ShowHugeNumber.c */; };
+		ED6D61BB257183D90095F37D /* ScanHugeNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = ED6D61B0257183D90095F37D /* ScanHugeNumber.c */; };
 		EDAF7361252B8A9A00FA052D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EDAF7360252B8A9A00FA052D /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +32,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED6D619D257183D90095F37D /* DoublyLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoublyLinkedList.h; sourceTree = "<group>"; };
+		ED6D619E257183D90095F37D /* DoublyLinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DoublyLinkedList.c; sourceTree = "<group>"; };
+		ED6D61A1257183D90095F37D /* HugeIntOperator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HugeIntOperator.c; sourceTree = "<group>"; };
+		ED6D61A2257183D90095F37D /* HugeUnsignedIntOperator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HugeUnsignedIntOperator.c; sourceTree = "<group>"; };
+		ED6D61A3257183D90095F37D /* HugeFloatOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HugeFloatOperator.h; sourceTree = "<group>"; };
+		ED6D61A4257183D90095F37D /* HugeUnsignedIntOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HugeUnsignedIntOperator.h; sourceTree = "<group>"; };
+		ED6D61A5257183D90095F37D /* HugeIntOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HugeIntOperator.h; sourceTree = "<group>"; };
+		ED6D61A6257183D90095F37D /* HugeFloatOperator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HugeFloatOperator.c; sourceTree = "<group>"; };
+		ED6D61A8257183D90095F37D /* HugeInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HugeInt.h; sourceTree = "<group>"; };
+		ED6D61A9257183D90095F37D /* HugeFloat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HugeFloat.c; sourceTree = "<group>"; };
+		ED6D61AA257183D90095F37D /* HugeUnsignedInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HugeUnsignedInt.h; sourceTree = "<group>"; };
+		ED6D61AB257183D90095F37D /* HugeInt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HugeInt.c; sourceTree = "<group>"; };
+		ED6D61AC257183D90095F37D /* HugeFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HugeFloat.h; sourceTree = "<group>"; };
+		ED6D61AD257183D90095F37D /* HugeUnsignedInt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HugeUnsignedInt.c; sourceTree = "<group>"; };
+		ED6D61AF257183D90095F37D /* ShowHugeNumber.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ShowHugeNumber.c; sourceTree = "<group>"; };
+		ED6D61B0257183D90095F37D /* ScanHugeNumber.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ScanHugeNumber.c; sourceTree = "<group>"; };
+		ED6D61B1257183D90095F37D /* ShowHugeNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowHugeNumber.h; sourceTree = "<group>"; };
+		ED6D61B2257183D90095F37D /* ScanHugeNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanHugeNumber.h; sourceTree = "<group>"; };
 		EDAF735D252B8A9A00FA052D /* HugeNumberCalulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HugeNumberCalulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAF7360252B8A9A00FA052D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		EDAF7369252B8B7800FA052D /* td1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = td1.txt; sourceTree = "<group>"; };
@@ -39,6 +66,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED6D619C257183D90095F37D /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D619D257183D90095F37D /* DoublyLinkedList.h */,
+				ED6D619E257183D90095F37D /* DoublyLinkedList.c */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		ED6D619F257183D90095F37D /* UseHugeNumber */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D61A0257183D90095F37D /* Operator */,
+				ED6D61A7257183D90095F37D /* Type */,
+			);
+			path = UseHugeNumber;
+			sourceTree = "<group>";
+		};
+		ED6D61A0257183D90095F37D /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D61A1257183D90095F37D /* HugeIntOperator.c */,
+				ED6D61A2257183D90095F37D /* HugeUnsignedIntOperator.c */,
+				ED6D61A3257183D90095F37D /* HugeFloatOperator.h */,
+				ED6D61A4257183D90095F37D /* HugeUnsignedIntOperator.h */,
+				ED6D61A5257183D90095F37D /* HugeIntOperator.h */,
+				ED6D61A6257183D90095F37D /* HugeFloatOperator.c */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		ED6D61A7257183D90095F37D /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D61A8257183D90095F37D /* HugeInt.h */,
+				ED6D61A9257183D90095F37D /* HugeFloat.c */,
+				ED6D61AA257183D90095F37D /* HugeUnsignedInt.h */,
+				ED6D61AB257183D90095F37D /* HugeInt.c */,
+				ED6D61AC257183D90095F37D /* HugeFloat.h */,
+				ED6D61AD257183D90095F37D /* HugeUnsignedInt.c */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		ED6D61AE257183D90095F37D /* IHMHugeNumber */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D61AF257183D90095F37D /* ShowHugeNumber.c */,
+				ED6D61B0257183D90095F37D /* ScanHugeNumber.c */,
+				ED6D61B1257183D90095F37D /* ShowHugeNumber.h */,
+				ED6D61B2257183D90095F37D /* ScanHugeNumber.h */,
+			);
+			path = IHMHugeNumber;
+			sourceTree = "<group>";
+		};
 		EDAF7354252B8A9A00FA052D = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +140,9 @@
 		EDAF735F252B8A9A00FA052D /* HugeNumberCalulator */ = {
 			isa = PBXGroup;
 			children = (
+				ED6D619C257183D90095F37D /* DataTypes */,
+				ED6D61AE257183D90095F37D /* IHMHugeNumber */,
+				ED6D619F257183D90095F37D /* UseHugeNumber */,
 				EDAF7360252B8A9A00FA052D /* main.c */,
 				EDAF7369252B8B7800FA052D /* td1.txt */,
 			);
@@ -90,7 +175,7 @@
 		EDAF7355252B8A9A00FA052D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					EDAF735C252B8A9A00FA052D = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -120,7 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6D61B4257183D90095F37D /* HugeIntOperator.c in Sources */,
 				EDAF7361252B8A9A00FA052D /* main.c in Sources */,
+				ED6D61B6257183D90095F37D /* HugeFloatOperator.c in Sources */,
+				ED6D61B9257183D90095F37D /* HugeUnsignedInt.c in Sources */,
+				ED6D61BB257183D90095F37D /* ScanHugeNumber.c in Sources */,
+				ED6D61BA257183D90095F37D /* ShowHugeNumber.c in Sources */,
+				ED6D61B7257183D90095F37D /* HugeFloat.c in Sources */,
+				ED6D61B3257183D90095F37D /* DoublyLinkedList.c in Sources */,
+				ED6D61B8257183D90095F37D /* HugeInt.c in Sources */,
+				ED6D61B5257183D90095F37D /* HugeUnsignedIntOperator.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +335,7 @@
 		EDAF7365252B8A9A00FA052D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZL9396WK65;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -251,6 +346,7 @@
 		EDAF7366252B8A9A00FA052D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZL9396WK65;
 				ENABLE_HARDENED_RUNTIME = YES;
