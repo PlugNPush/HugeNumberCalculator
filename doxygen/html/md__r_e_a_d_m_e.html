@@ -105,7 +105,7 @@ HugeNumberCalculator architecture :</h2>
 </li>
 <li>\UseHugeNumber<ul>
 <li>\Operator<ul>
-<li><a class="el" href="_huge_float_operator_8h.html" title="Header of the library allowing operation on HugeFloat.">HugeFloatOperator.h</a><ul>
+<li>HugeFloatOperator.h<ul>
 <li><code>HugeFloat* addHugeFloat (HugeFloat* operand1, HugeFloat* operand2);</code></li>
 <li><code>HugeFloat* substractHugeFloat (HugeFloat* operand1, HugeFloat* operand2);</code></li>
 <li><code>HugeFloat* multiplyHugeFloat (HugeFloat* operand1, HugeFloat* operand2);</code></li>
@@ -113,7 +113,7 @@ HugeNumberCalculator architecture :</h2>
 </ul>
 </li>
 <li>HugeFloatOperator.c</li>
-<li><a class="el" href="_huge_int_operator_8h.html" title="Header of the library allowing operation on HugeInt.">HugeIntOperator.h</a><ul>
+<li>HugeIntOperator.h<ul>
 <li><code>HugeInt* addHugeInt (HugeInt* operand1, HugeInt* operand2);</code></li>
 <li><code>HugeInt* substractHugeInt (HugeInt* operand1, HugeInt* operand2);</code></li>
 <li><code>HugeInt* multiplyHugeInt (HugeInt* operand1, HugeInt* operand2);</code></li>
@@ -121,7 +121,7 @@ HugeNumberCalculator architecture :</h2>
 </ul>
 </li>
 <li>HugeIntOperator.c</li>
-<li><a class="el" href="_huge_unsigned_int_operator_8h.html" title="Header of the library allowing operation on HugeUnsignedInt.">HugeUnsignedIntOperator.h</a><ul>
+<li>HugeUnsignedIntOperator.h<ul>
 <li><code>HugeUnsignedInt* addHugeUnsignedInt (HugeUnsignedInt* operand1, HugeUnsignedInt* operand2);</code></li>
 <li><code>HugeUnsignedInt* createHugeUnsignedIntFromPowerOf10 (HugeUnsignedInt* exponent);</code></li>
 <li><code>void decrementHugeUnsignedInt (HugeUnsignedInt* hugeUnsignedInt);</code></li>
@@ -143,7 +143,7 @@ HugeNumberCalculator architecture :</h2>
 </ul>
 </li>
 <li>\Type<ul>
-<li><a class="el" href="_huge_float_8h.html" title="Header of the library allowing the management of HugeFloat.">HugeFloat.h</a><ul>
+<li>HugeFloat.h<ul>
 <li><code>typedef struct <a class="el" href="struct_huge_float.html">HugeFloat</a>;</code></li>
 <li><code>HugeFloat* createHugeFloat (void);</code></li>
 <li><code>HugeFloat* createHugeFloatFromString (char* significandString, char* exponentString);</code></li>
@@ -154,7 +154,7 @@ HugeNumberCalculator architecture :</h2>
 </ul>
 </li>
 <li>HugeFloat.c</li>
-<li><a class="el" href="_huge_int_8h.html" title="Header of the library allowing the management of HugeInt.">HugeInt.h</a><ul>
+<li>HugeInt.h<ul>
 <li><code>typedef enum Sign;</code></li>
 <li><code>typedef struct <a class="el" href="struct_huge_int.html">HugeInt</a>;</code></li>
 <li><code>HugeInt* createHugeInt (void);</code></li>
@@ -166,7 +166,7 @@ HugeNumberCalculator architecture :</h2>
 </ul>
 </li>
 <li>HugeInt.c</li>
-<li><a class="el" href="_huge_unsigned_int_8h.html" title="Header of the library allowing the management of HugeUnsignedInt.">HugeUnsignedInt.h</a><ul>
+<li>HugeUnsignedInt.h<ul>
 <li><code>HugeUnsignedInt* createHugeUnsignedInt (void);</code></li>
 <li><code>HugeUnsignedInt* createHugeUnsignedIntFromString (char* digitString);</code></li>
 <li><code>HugeUnsignedInt* createHugeUnsignedIntFromHugeUnsignedInt (HugeUnsignedInt* hugeUnsignedInt, unsigned int size);</code></li>
@@ -181,19 +181,19 @@ HugeNumberCalculator architecture :</h2>
 </ul>
 </li>
 <li>\IHMHugeNumber<ul>
-<li><a class="el" href="_scan_huge_number_8h_source.html">ScanHugeNumber.h</a><ul>
+<li>ScanHugeNumber.h<ul>
 <li><code>HugeInt* scanHugeInt (void);</code></li>
 <li><code>HugeInt* scanHugeUnsignedInt (void);</code></li>
 </ul>
 </li>
-<li><a class="el" href="_scan_huge_number_8h_source.html">ScanHugeNumber.h</a></li>
-<li><a class="el" href="_show_huge_number_8h_source.html">ShowHugeNumber.h</a><ul>
+<li>ScanHugeNumber.h</li>
+<li>ShowHugeNumber.h<ul>
 <li><code>void printHugeUnsignedInt (HugeUnsignedInt* hugeUnsignedInt);</code></li>
 <li><code>void printHugeInt (HugeInt* hugeInt);</code></li>
 <li><code>void printHugeFloat (HugeFloat* hugeFloat);</code></li>
 </ul>
 </li>
-<li><a class="el" href="_show_huge_number_8h_source.html">ShowHugeNumber.h</a><ul>
+<li>ShowHugeNumber.h<ul>
 <li><code>char* HugeUnsignedIntToString (HugeUnsignedInt* hugeUnsignedInt);</code></li>
 <li><code>char* HugeIntToString (HugeInt* hugeInt);</code></li>
 <li><code>* HugeFloatToString (HugeFloat* hugeFloat);</code> </li>

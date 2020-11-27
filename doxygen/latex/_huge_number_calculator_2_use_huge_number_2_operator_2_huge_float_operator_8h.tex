@@ -1,0 +1,123 @@
+\hypertarget{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h}{}\doxysection{Huge\+Number\+Calculator/\+Use\+Huge\+Number/\+Operator/\+Huge\+Float\+Operator.h File Reference}
+\label{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h}\index{HugeNumberCalculator/UseHugeNumber/Operator/HugeFloatOperator.h@{HugeNumberCalculator/UseHugeNumber/Operator/HugeFloatOperator.h}}
+
+
+Header of the library allowing operation on \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}.  
+
+
+{\ttfamily \#include \char`\"{}Huge\+Int\+Operator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Huge\+Unsigned\+Int\+Operator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Type/\+Huge\+Float.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a39065b5c806ec4332331ff3453464b4f}{add\+Huge\+Float}} (const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$operand1, const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$operand2)
+\begin{DoxyCompactList}\small\item\em Function to add two \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_ae8ad2e2d5fc7489cafc5c72a2144f99c}{substract\+Huge\+Float}} (const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$operand1, const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$operand2)
+\begin{DoxyCompactList}\small\item\em Function to subtract two \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a83d994bacc3b030f2a2bb1cc7b26f2b6}{multiply\+Huge\+Float}} (const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$operand1, const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$operand2)
+\begin{DoxyCompactList}\small\item\em Function to multiply two \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$ \mbox{\hyperlink{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a718ef0c064b8fb6a04e223413bf8b441}{simplify\+Huge\+Float}} (\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$huge\+Float)
+\begin{DoxyCompactList}\small\item\em Function to simplify a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. ~\newline
+ By simplify i mean delete the {\ttfamily 0} before the real value and the exponent of the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of the library allowing operation on \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a39065b5c806ec4332331ff3453464b4f}\label{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a39065b5c806ec4332331ff3453464b4f}} 
+\index{HugeFloatOperator.h@{HugeFloatOperator.h}!addHugeFloat@{addHugeFloat}}
+\index{addHugeFloat@{addHugeFloat}!HugeFloatOperator.h@{HugeFloatOperator.h}}
+\doxysubsubsection{\texorpdfstring{addHugeFloat()}{addHugeFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ add\+Huge\+Float (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{operand1,  }\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{operand2 }\end{DoxyParamCaption})}
+
+
+
+Function to add two \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand1} & the first \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer to add. \\
+\hline
+{\em operand2} & the second \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, result of the addition, if the addition could be carried out successfully. 
+
+{\ttfamily N\+U\+LL}, if the addition could not be carried out successfully. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a83d994bacc3b030f2a2bb1cc7b26f2b6}\label{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a83d994bacc3b030f2a2bb1cc7b26f2b6}} 
+\index{HugeFloatOperator.h@{HugeFloatOperator.h}!multiplyHugeFloat@{multiplyHugeFloat}}
+\index{multiplyHugeFloat@{multiplyHugeFloat}!HugeFloatOperator.h@{HugeFloatOperator.h}}
+\doxysubsubsection{\texorpdfstring{multiplyHugeFloat()}{multiplyHugeFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ multiply\+Huge\+Float (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{operand1,  }\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{operand2 }\end{DoxyParamCaption})}
+
+
+
+Function to multiply two \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand1} & the first \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer to multiply. \\
+\hline
+{\em operand2} & the second \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, result of the multiplication, if the multiplication could be carried out successfully. 
+
+{\ttfamily N\+U\+LL}, if the multiplication could not be carried out successfully. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a718ef0c064b8fb6a04e223413bf8b441}\label{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_a718ef0c064b8fb6a04e223413bf8b441}} 
+\index{HugeFloatOperator.h@{HugeFloatOperator.h}!simplifyHugeFloat@{simplifyHugeFloat}}
+\index{simplifyHugeFloat@{simplifyHugeFloat}!HugeFloatOperator.h@{HugeFloatOperator.h}}
+\doxysubsubsection{\texorpdfstring{simplifyHugeFloat()}{simplifyHugeFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ simplify\+Huge\+Float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{huge\+Float }\end{DoxyParamCaption})}
+
+
+
+Function to simplify a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. ~\newline
+ By simplify i mean delete the {\ttfamily 0} before the real value and the exponent of the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huge\+Float} & a pointer to the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} to simplify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} simplified. 
+
+{\ttfamily N\+U\+LL}, if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_ae8ad2e2d5fc7489cafc5c72a2144f99c}\label{_huge_number_calculator_2_use_huge_number_2_operator_2_huge_float_operator_8h_ae8ad2e2d5fc7489cafc5c72a2144f99c}} 
+\index{HugeFloatOperator.h@{HugeFloatOperator.h}!substractHugeFloat@{substractHugeFloat}}
+\index{substractHugeFloat@{substractHugeFloat}!HugeFloatOperator.h@{HugeFloatOperator.h}}
+\doxysubsubsection{\texorpdfstring{substractHugeFloat()}{substractHugeFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}$\ast$ substract\+Huge\+Float (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{operand1,  }\item[{const \mbox{\hyperlink{struct_huge_float}{Huge\+Float}} $\ast$}]{operand2 }\end{DoxyParamCaption})}
+
+
+
+Function to subtract two \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand1} & the first \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer to subtract. \\
+\hline
+{\em operand2} & the second \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_huge_float}{Huge\+Float}}\textquotesingle{}s pointer, result of the substraction, if the substraction could be carried out successfully. 
+
+{\ttfamily N\+U\+LL}, if the substraction could not be carried out successfully. 
+\end{DoxyReturn}
